@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spy Mirror</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Add video element for camera feed -->
+    <video id="cameraFeed" autoplay playsinline muted></video>
+    
+    <div class="scan-line" id="scanLine"></div>
+    
+    <div class="welcome-container" id="welcomeContainer">
+        <button class="welcome-button" id="welcomeButton">Welcome, Agent</button>
+    </div>
+    
+    <div class="caption-container hidden" id="captionContainer">
+        <p class="caption" id="caption"></p>
+    </div>
+    
+    <div class="result-container hidden" id="resultContainer">
+        <p class="judgment-quote" id="judgmentQuote"></p>
+        <p class="beauty-rating" id="beautyRating"></p>
+        <div class="action-buttons" id="actionButtons">
+            <button class="action-button" id="shutdownButton">Shutdown</button>
+            <button class="action-button" id="selfDestructButton">Self-Destruct</button>
+        </div>
+    </div>
+
+    <!-- Self-destruct elements -->
+    <div class="self-destruct-overlay hidden" id="selfDestructOverlay">
+        <div class="critical-error hidden" id="criticalError">
+            <p>CRITICAL ERROR</p>
+            <p class="countdown" id="countdown">Self-destruct in 3...</p>
+        </div>
+        <p class="self-destruct-quote hidden" id="selfDestructQuote"></p>
+    </div>
+    <div class="static-effect hidden" id="staticEffect"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
